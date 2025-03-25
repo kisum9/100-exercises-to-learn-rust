@@ -17,6 +17,9 @@ pub fn factorial(n: u32) -> u32 {
 mod tests {
     use crate::factorial;
 
+    // Add in project Cargo.toml file
+    // [profile.dev]
+    // overflow-checks = false
     #[test]
     fn twentieth() {
         // 20! is 2432902008176640000, which is too large to fit in a u32
